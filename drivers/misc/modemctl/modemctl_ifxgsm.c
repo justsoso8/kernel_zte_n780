@@ -37,7 +37,7 @@ All Rights Reserved. ZTE Proprietary and Confidential.
 						 INCLUDE FILES FOR MODULE
 ===========================================================================*/
 
-#include <modemctl.h>	/* kernel module definitions */
+#include "modemctl.h"	/* kernel module definitions */
 
 /*=========================================================================*/
 /*                               CONSTANTS                                 */

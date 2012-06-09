@@ -200,10 +200,10 @@ $(objtree)/$$(%) $(objtree)/$(obj)/$$(%): $(firmware-dirs)
 $(patsubst %,$(obj)/%.gen.S, $(fw-shipped-y)): %: $(wordsize_deps) \
 		| $(objtree)/$$(dir %)
 ifdef CONFIG_ATMEL_FW_UPDATE_224
-	cp $(srctree)/$(src)/mXT224C23_v1.1.09.enc $(objtree)/$(obj)/mXT224C23_v1.1.09.enc
+#	cp $(srctree)/$(src)/mXT224C23_v1.1.09.enc $(objtree)/$(obj)/mXT224C23_v1.1.09.enc
 endif
 ifdef CONFIG_ATMEL_FW_UPDATE_140
-	cp $(srctree)/$(src)/mXT140C27_v1.0.01.enc $(objtree)/$(obj)/mXT140C27_v1.0.01.enc
+#	cp $(srctree)/$(src)/mXT140C27_v1.0.01.enc $(objtree)/$(obj)/mXT140C27_v1.0.01.enc
 endif
 	$(call cmd,fwbin,$(patsubst %.gen.S,%,$@))
 $(patsubst %,$(obj)/%.gen.S, $(fw-external-y)): %: $(wordsize_deps) \
