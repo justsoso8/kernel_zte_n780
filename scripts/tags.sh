@@ -89,7 +89,9 @@ all_defconfigs()
 
 docscope()
 {
-	(echo \-k; echo \-q; all_sources) > cscope.files
+	if [ ! -e "cscope.files" ]; then
+        (echo \-k; echo \-q; all_sources) > cscope.files
+    fi
 	cscope -b -f cscope.out
 }
 
