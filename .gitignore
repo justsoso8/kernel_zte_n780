@@ -64,6 +64,7 @@ series
 
 # cscope files
 cscope.*
+!cscope.files
 ncscope.*
 
 # gnu global files
